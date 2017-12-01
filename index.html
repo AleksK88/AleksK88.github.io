@@ -9,10 +9,7 @@
         <div id="wrapper">
     	    <div id="main">
     		    <div id="container">
-    			    <div id="content" role="main">
-                        <!-- TODO: Content goes here -->
-
-                        
+    			    <div id="content" role="main">                      
                         <p>
                         	Below is just about everything you’ll need to style in the theme. Check the h1source code to see the many embedded elements within paragraphs.
                         </p>
@@ -39,61 +36,53 @@
                             commodo vitae, feugiat in, nunc.
                             Morbi imperdiet augue quis tellus.
                         </p>
-                        <p style="display: inline;">
+                        <p>
                         	<acronym>HTML</acronym>
                             and <acronym>CSS</acronym> are our tools. Mauris a ante. Suspendisse quam sem,
                             consequat at, commodo vitae, feugiat in, nunc.
                             Morbi imperdiet augue quis tellus.
                             Praesent mattis, massa quis luctus fermentum,
                             turpis mi volutpat justo, eu volutpat enim diam eget metus.
-                            To copy a file type <kbd>COPY</kbd>
-                        </p>
-                            <tt style="font-family: lucida console; font-style: italic; display: in">filename</tt>
-                            
-                            <p style="display: inline;">.
+                            To copy a file type <samp>COPY</samp><tt><i>filename.</i></tt> 
                             <del>Dinner's at 5:00.</del> <ins>Let’s make that 7.</ins>
                             This <del>text</del> has been struck.
                         </p>
                         <hr>
                        <h1>List Types</h1>
-                        <h2>Definition List</h2>
-
+                       <h3>Definition List</h3>
                         <dl>
-                          <dt>Definition List Title</dt>
+                           <dt><strong>Definition List Title</strong></dt>
                            <dd>This is a definition list division.</dd>
-                          <dt>Definition</dt>
+                           <dt><strong>Definition</strong></dt>
                            <dd>
                             An exact statement or description of the nature, scope, 
-                            or meaning of something: <i>our definition of what constitutes poetry.</i>
+                            or meaning of something: <em>our definition of what constitutes poetry.</em>
                            </dd>
                         </dl>
-                        <h2>Ordered List</h2>
+                        
+			<h2>Ordered List</h2>
                         <ol>
-                        	<li>List Item 1</li>
-                        	
+                        	<li>List Item 1</li> 
+				<li>List Item 2</li>
                         		<ol type="A">
-								  <li>Nested list item A</li>
-								  <li>Nested list item B</li>
-								</ol>  
-                        	
-                        	<li>List Item 2</li>
+						  <li>Nested list item A</li>
+						  <li>Nested list item B</li>
+					</ol>                         	               	
                         	<li>List Item 3</li>
                         </ol>
 
-                        <p style="font-size:120%;">Unordered List</p>
+                        <p>Unordered List</p>
                         <ul>
                         	<li>List Item 1</li>
-                        	
-                        		<ul>
-								  <li>Nested list item A</li>
-								  <li>Nested list item B</li>
-								</ul>  
-                        	
                         	<li>List Item 2</li>
+                        		<ul>
+					 	<li>Nested list item A</li>
+						<li>Nested list item B</li>
+					</ul>
                         	<li>List Item 3</li>
                         </ul>
                         <hr>
-                        <p style="font-size:160%;">Table</p>
+                        <p>Table</p>
                         <table>                        	
                         	<thead>
                         		<tr>
@@ -121,53 +110,47 @@
 	                        </tbody>
                         </table>
                         <hr>
-                        <p style="font-size:160%;">Preformatted Text</p>
+                        <p>Preformatted Text</p>
                         <p>
                         	Typographically, preformatted text is not the same thing as code. Sometimes, a faithful execution of the text requires preformatted text that may not have anything to do with code. Most browsers use Courier and that’s a good default — with one slight adjustment, Courier 10 Pitch over regular Courier for Linux users. For example:
                         </p>
-<!--                        <blockquote> -->
-<pre style="font-style: normal;">
+	<blockquote>
+		<pre>
 “Beware the Jabberwock, my son!
     The jaws that bite, the claws that catch!
 Beware the Jubjub bird, and shun
     The frumious Bandersnatch!”
-                        		</pre>
-<!--                        </blockquote> -->
-                        <h3>Code</h3>
-                        <p>Code can be presented inline, like <?php bloginfo('stylesheet_url'); ?>, or within a <<!--><!-->pre> block. Because we have more specific typographic needs for code, we’ll specify Consolas and Monaco ahead of the browser-defined monospace font.</p>
-  <!--                      <blockquote>
-<pre style="font-style: initial;font-family:monospace;"> -->
-    
-        <pre style="font-family: monospace;">
+        </pre>
+	</blockquote>
+                        
+						<h3>Code</h3>
+                        <p>Code can be presented inline, like <code><<!---->?php bloginfo('stylesheet_url'); ?></code>, or within;
+						<code><<!-- -->pre></code>; block. Because we have more specific typographic needs for code, we’ll specify Consolas and Monaco ahead of the browser-defined monospace font.</p>
+	<blockquote>
+        <pre>
 #container {
     float: left;
     margin: 0 -240px 0 0;
     width: 100%;
 }
-</pre>
-
+		</pre>
+	</blockquote>
 <hr>
-                        <!--</blockquote>-->
+                
                         <h2>Blockquotes</h2>
                         <p>Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.</p>
-                      <blockquote>
- 
-<!--  <pre style="background-color: white; font-style: oblique;">  -->
-<dfn>
+	<blockquote>
+		<dfn>
 Good afternoon, gentlemen. I am a HAL 9000 computer.
 I became operational at the H.A.L. plant in Urbana,
 Illinois on the 12th of January 1992. My instructor
 was Mr. Langley, and he taught me to sing a song.
 If you’d like to hear it I can sing it for you.
-
-</dfn>
+		</dfn>
+	</blockquote>		
 <br>
-<br>
-<a href="#">— HAL 9000</a>
-<!--</pre> -->
-
-                        </blockquote>
-
+<hr>
+	<a href="#">— HAL 9000</a>
 
 
                     </div>
